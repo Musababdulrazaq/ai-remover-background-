@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ku">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سڕینەوەی پاشبنەما</title>
+    <!-- Link Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            direction: rtl;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #f9f9f9, #e0e0e0);
+            color: #333;
+            text-align: center;
+        }
+        h1 {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 0;
+            margin: 0;
+            font-size: 24px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        h1 i {
+            font-size: 24px;
+        }
+        form {
+            margin: 50px auto;
+            padding: 20px;
+            width: 350px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: right;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+        input[type="file"] {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            justify-content: center;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            color: red;
+            font-style: italic;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #555;
+        }
+        footer i {
+            color: #007bff;
+        }
+        .credit {
+            margin-top: 15px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <h1><i class="fas fa-images"></i> وێنە بار بکە بۆ سڕینەوەی پاشبنەما</h1>
+    <form action="/remove-background" method="post" enctype="multipart/form-data">
+        <label for="image"><i class="fas fa-file-upload"></i> وێنە هەڵبژێرە:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <p><i class="fas fa-exclamation-circle"></i> هیچ وێنەیەک هەڵنەبژێردراوە</p>
+        <button type="submit"><i class="fas fa-magic"></i> سڕینەوەی پاشبنەما</button>
+    </form>
+    <footer>
+        <p>پیشکەشکراوە بە <i class="fas fa-heart"></i> بۆ کارمەندانی کورد</p>
+        <div class="credit">Prepared by Musaab</div>
+    </footer>
+</body>
+</html>
